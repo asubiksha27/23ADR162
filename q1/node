@@ -1,0 +1,13 @@
+git add .
+git commit -m "message"
+git push
+
+
+
+
+git init
+git add .
+git commit -m "Project submission"
+git remote add origin https://github.com/asubiksha27/23ADR162.git
+git branch -M main
+git push -u origin main

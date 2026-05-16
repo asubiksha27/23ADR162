@@ -5,7 +5,7 @@ app.use(express.json());
 
 let products = [];
 
-// Add product
+
 app.post("/products", (req, res) => {
     let product = req.body;
     products.push(product);
@@ -13,12 +13,12 @@ app.post("/products", (req, res) => {
     res.send("Product added");
 });
 
-// Get all products
+
 app.get("/products", (req, res) => {
     res.json(products);
 });
 
-// Update product
+
 app.put("/products/:id", (req, res) => {
     let id = req.params.id;
 
@@ -31,7 +31,7 @@ app.put("/products/:id", (req, res) => {
     res.send("Product updated");
 });
 
-// Delete product
+
 app.delete("/products/:id", (req, res) => {
     let id = req.params.id;
 
