@@ -2,7 +2,8 @@ git add .
 git commit -m "message"
 git push
 
-
+npm init -y
+npm install
 
 
 git init
